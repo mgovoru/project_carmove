@@ -192,7 +192,7 @@ body {
 }
 
 .page {
-  background: url("./img/1.jpg") 0 0/100% auto no-repeat;
+  background: url("../img/1.jpg") 0 0/100% auto no-repeat;
   color: rgb(146, 146, 146);
 }
 
