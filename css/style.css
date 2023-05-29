@@ -211,7 +211,9 @@ body {
   }
 }
 .bird {
+  -webkit-transform: translate(50.5vw, -1.27vh);
   transform: translate(50.5vw, -1.27vh);
+  -webkit-animation: flybird 10s linear 0s infinite normal none;
   animation: flybird 10s linear 0s infinite normal none;
 }
 
@@ -225,7 +227,9 @@ body {
   border-top: transparent;
   border-left: transparent;
   border-bottom: transparent;
+  -webkit-transform: translate(0, 0) rotate(300deg);
   transform: translate(0, 0) rotate(300deg);
+  -webkit-animation: fly 1s linear 0s infinite normal backwards;
   animation: fly 1s linear 0s infinite normal backwards;
 }
 
@@ -239,37 +243,58 @@ body {
   border-top: transparent;
   border-left: transparent;
   border-bottom: transparent;
+  -webkit-transform: translate(1.27vw, -1.27vw) rotate(-90deg);
   transform: translate(1.27vw, -1.27vw) rotate(-90deg);
+  -webkit-animation: fly_second 1s linear 0s infinite normal backwards;
   animation: fly_second 1s linear 0s infinite normal backwards;
 }
 
 .bird_second {
+  -webkit-transform: translate(40.4vw, 0.51vh);
   transform: translate(40.4vw, 0.51vh);
 }
 
 .bird_third {
+  -webkit-transform: translate(30.3vw, 2.03vh);
   transform: translate(30.3vw, 2.03vh);
 }
 
 .bird_fourth {
+  -webkit-transform: translate(25.3vw, 1.01vh);
   transform: translate(25.3vw, 1.01vh);
 }
 
 .bird_fifth {
+  -webkit-transform: translate(70.7vw, -10.1vh);
   transform: translate(70.7vw, -10.1vh);
 }
 
+@-webkit-keyframes flybird {
+  50% {
+    -webkit-transform: translate(60.6vw, 0);
+    transform: translate(60.6vw, 0);
+  }
+}
 @keyframes flybird {
   50% {
     transform: translate(60.6vw, 0);
   }
-  50% {
-    transform: translate(60.6vw, 0);
+}
+@-webkit-keyframes fly {
+  100% {
+    -webkit-transform: rotate(-35deg);
+    transform: rotate(-35deg);
   }
 }
 @keyframes fly {
   100% {
     transform: rotate(-35deg);
+  }
+}
+@-webkit-keyframes fly_second {
+  100% {
+    -webkit-transform: translate(1.27vw, -1.27vw) rotate(-115deg);
+    transform: translate(1.27vw, -1.27vw) rotate(-115deg);
   }
 }
 @keyframes fly_second {
